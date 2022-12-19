@@ -4,9 +4,9 @@ sense = SenseHat()
 while(True):
   temp = sense.get_temperature()
   print("溫度= ", temp)
-  if (temp>28): #hot
+  if (temp>108): #hot
      bg_color=(255,0,0)
-  elif (temp<20): #cold
+  elif (temp<30): #cold
      bg_color=(0,0,255)
   else: #fine
     bg_color=(0,255,0)
